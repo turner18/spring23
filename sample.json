@@ -1,0 +1,49 @@
+//LanchRequest coming from Amazon
+
+{
+    version: '1.0',
+    session: {
+        new: true,
+        sessionId: 'amzn1.echo-api.session.3a930a24-195c-4e2b-a86b-983e20a6fa52',
+        user: {
+            userId: 'amzn1.account.AHBLH447NR5AWYYH74SW7ECWYMHA'
+        }
+    },
+    request: {
+        type: 'LaunchRequest',
+        requestId: 'amzn1.echo-api.request.e4eaf3a6-69c8-4d0d-b55d-f5cbf523ba4c'
+    }
+}
+
+
+//IntentRequest coming from Amazon
+{ version: '1.0',
+  session: 
+   { sessionId: 'amzn1.echo-api.session.0c739a24-45ae-486f-a090-0298f7d8c5a4',
+     attributes: null,
+     user: { userId: 'amzn1.account.AHBLH447NR5AWYYH74SW7ECWYMHA' } },
+  request: 
+   { type: 'IntentRequest',
+     requestId: 'amzn1.echo-api.request.10c18072-e70f-4d3f-b121-9775ec70c896',
+     intent: { name: 'sample', slots: [Object] } } }
+
+//SessonEndedRequest coming from Amazon
+
+
+{
+    version: '1.0',
+    session: {
+        sessionId: 'amzn1.echo-api.session.4e11f1ec-2510-43da-bf71-81abfcc97ad7',
+        attributes: null,
+        user: {
+            userId: 'amzn1.account.AHBLH447NR5AWYYH74SW7ECWYMHA'
+        }
+    },
+    request: {
+        type: 'SessionEndedRequest',
+        requestId: 'amzn1.echo-api.request.78fb5735-d82a-491e-8c10-2439e3517381',
+        reason: 'EXCEEDED_MAX_REPROMPTS'
+    }
+}
+
+

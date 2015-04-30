@@ -31,7 +31,7 @@ function respond(theText) {
                 subtitle: 'Spring 23',
                 content: theText
             },
-            shouldEndSession: 'true'
+            shouldEndSession: 'false'
         }
     }
     return (theResponse);
@@ -45,7 +45,8 @@ https.createServer(options, function(req, res) {
             jsonString += data;
         });
         req.on('end', function() {
-            console.log(JSON.parse(jsonString));
+            if (jsonString.length > 0)
+                console.log(JSON.parse(jsonString));
         });
     }
     myResponse = JSON.stringify(respond(getRandomQuote()));
